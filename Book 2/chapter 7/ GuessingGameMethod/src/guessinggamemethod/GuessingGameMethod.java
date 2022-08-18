@@ -8,11 +8,11 @@ package guessinggamemethod;
  *
  * @author letha
  */
-import java.util.Scanner;
+import java.util.Scanner;                                           //get user input
 
 public class GuessingGameMethod {
 
-    static Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);                     //Scanner class allows user to take input from console
     static boolean keepPlaying = true;
 
     public static void main(String[] args) {
