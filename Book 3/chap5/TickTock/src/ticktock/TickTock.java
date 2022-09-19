@@ -8,8 +8,8 @@ package ticktock;
  *
  * @author letha
  */
-import java.awt.event.*;
-import javax.swing.*;
+import java.awt.event.*;        //Defines a contract between user-interface components and an assistive technology that provides access to those components.
+import javax.swing.*;           //The Timer class is part of the javax.swing package
 
 public class TickTock {
 
@@ -22,7 +22,7 @@ public class TickTock {
 
         // display a message box to prevent the
         // program from ending immediately
-        JOptionPane.showMessageDialog(null,
+        JOptionPane.showMessageDialog(null,             //The JOptionPane class is used to display a dialog box
                 "Click OK to exit program");
     }
 }
