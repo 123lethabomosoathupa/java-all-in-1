@@ -10,11 +10,37 @@ package boboandthelockers;
  */
 public class BoboAndTheLockers {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        boolean[] lockers = new boolean[1001];
+        // close all the lockers
+        for (int i = 1; i <= 1000; i++)//This for loop closes all the lockers
+        {
+            lockers[i] = false;
+        }
+        for (int skip = 1; skip <= 1000; skip++) {
+            System.out.println("Bobo is changing every "
+                    + skip + " lockers.");
+            for (int locker = skip; locker < 1000;
+                    locker += skip) {
+                lockers[locker] = !lockers[locker];
+
+            }
+        }
+        System.out.println("Bobo is bored"
+                + " now so he's going home.");
+        // count and list the open lockers
+        String list = "";
+        int openCount = 0;
+        for (int i = 1; i <= 1000; i++) {
+            if (lockers[i]) {
+                openCount++;
+                list += i + " ";
+            }
+        }
+        System.out.println("Bobo left " + openCount
+                + " lockers open.");
+        System.out.println("The open lockers are: "
+                + list);
     }
-    
 }
