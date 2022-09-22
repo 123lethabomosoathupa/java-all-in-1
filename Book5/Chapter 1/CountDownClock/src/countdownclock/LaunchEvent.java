@@ -4,10 +4,9 @@
  */
 package countdownclock;
 
-/**
- *
- * @author letha
- */
+//Java defines a runnable interface as one whose instances can execute as a Thread.
+// The runnable interface serves as a fundamental building block of the Java programming language when dealing with Threads.
+// Thread-running Java classes must implement this interface.
 public class LaunchEvent implements Runnable {
 
     private int start;
