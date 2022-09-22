@@ -10,11 +10,22 @@ package spell;
  */
 public class Spell {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    public String name;
+    public SpellType type;
+    public String description;
+
+    public enum SpellType {
+        SPELL, CHARM, CURSE
     }
-    
+
+    public Spell(String spellName, SpellType spellType,
+            String spellDescription) {
+        name = spellName;
+        type = spellType;
+        description = spellDescription;
+    }
+
+    public String toString() {
+        return name;
+    }
 }
