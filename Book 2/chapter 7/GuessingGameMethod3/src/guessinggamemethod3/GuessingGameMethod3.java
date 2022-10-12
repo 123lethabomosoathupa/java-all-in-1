@@ -17,7 +17,7 @@ public class GuessingGameMethod3 {
     public static void main(String[] args) {
         System.out.println("Let's play a guessing game!");
         do {
-            playARound(1, getRandomNumber(7, 12)); //→13
+            playARound(1, getRandomNumber(7, 12)); 
         } while (askForAnotherRound("Try again?"));
         System.out.println("\nThank you for playing!");
     }
@@ -29,12 +29,12 @@ public class GuessingGameMethod3 {
         int number, guess;
         String answer;
 // Pick a random number
-        number = getRandomNumber(min, max); //→25
+        number = getRandomNumber(min, max); 
 // Get the guess
         System.out.println("\nI'm thinking of a number "
-                + "between " + min + " and " + max + "."); //→29
+                + "between " + min + " and " + max + "."); 
         System.out.print("What do you think it is? ");
-        guess = getGuess(min, max); //→31
+        guess = getGuess(min, max); 
 // Check the guess
         if (guess == number) {
             System.out.println("You're right!");
@@ -44,28 +44,28 @@ public class GuessingGameMethod3 {
         }
     }
 
-    public static int getRandomNumber(int min, int max) //→41
+    public static int getRandomNumber(int min, int max) 
     {
-        return (int) (Math.random() //→43
+        return (int) (Math.random() 
                 * (max - min + 1)) + min;
     }
 
-    public static int getGuess(int min, int max) //→47
+    public static int getGuess(int min, int max) 
     {
         while (true) {
             int guess = sc.nextInt();
-            if ((guess < min) || (guess > max)) //→52
+            if ((guess < min) || (guess > max)) 
             {
                 System.out.print("I said, between "
                         + min + " and " + max
                         + ". Try again: ");
             } else {
-                return guess; //→59
+                return guess; 
             }
         }
     }
 
-    public static boolean askForAnotherRound(String prompt) //→63
+    public static boolean askForAnotherRound(String prompt) 
     {
         while (true) {
             String answer;
