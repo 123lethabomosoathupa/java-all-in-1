@@ -14,7 +14,7 @@ import javafx.scene.*;
 import javafx.scene.layout.*;
 import javafx.scene.control.*;
 
-public class ClickCounter extends Application {
+public class ClickCounter extends Application {     //extends to application
 
     public static void main(String[] args) {
         launch(args);
